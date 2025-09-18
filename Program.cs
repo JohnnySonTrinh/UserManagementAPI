@@ -39,6 +39,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+
+app.MapGet("/", () => Results.Text("User Management API"));
 app.MapControllers();
 
 app.Run();
