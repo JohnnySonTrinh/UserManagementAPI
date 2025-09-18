@@ -36,11 +36,20 @@ namespace UserManagementAPI.Controllers
         [ProducesResponseType(typeof(UserDto), 200)]
         [ProducesResponseType(404)]
         [Produces("application/json")]
+
         public async Task<ActionResult<UserDto>> GetById(int id)
         {
-            var user = await _repo.GetByIdAsync(id);
-            if (user == null) return NotFound();
-            return Ok(MapToDto(user));
+            try
+            {
+                var user = await _repo.GetByIdAsync(id);
+                if (user == null) return NotFound(new { message = "User not found." });
+                return Ok(MapToDto(user));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving user {Id}", id);
+                return StatusCode(500, new { message = "Internal server error." });
+            }
         }
 
         // POST /api/users
@@ -85,23 +94,32 @@ namespace UserManagementAPI.Controllers
         [ProducesResponseType(404)]
         [ProducesResponseType(409)]
         [Produces("application/json")]
+
         public async Task<IActionResult> Update(int id, [FromBody] UpdateUserDto dto)
         {
             if (!ModelState.IsValid)
                 return ValidationProblem(ModelState);
-            var existing = await _repo.GetByIdAsync(id);
-            if (existing == null) return NotFound();
-            if (_inMemoryRepo.EmailExists(dto.Email, id))
-                return Conflict(new { message = "Email already exists." });
-            existing.FirstName = dto.FirstName;
-            existing.LastName = dto.LastName;
-            existing.Email = dto.Email;
-            existing.Department = dto.Department;
-            existing.IsActive = dto.IsActive;
-            var updated = await _repo.UpdateAsync(existing);
-            if (!updated) return NotFound();
-            _logger.LogInformation("User updated: {Email}", existing.Email);
-            return NoContent();
+            try
+            {
+                var existing = await _repo.GetByIdAsync(id);
+                if (existing == null) return NotFound(new { message = "User not found." });
+                if (_inMemoryRepo.EmailExists(dto.Email, id))
+                    return Conflict(new { message = "Email already exists." });
+                existing.FirstName = dto.FirstName;
+                existing.LastName = dto.LastName;
+                existing.Email = dto.Email;
+                existing.Department = dto.Department;
+                existing.IsActive = dto.IsActive;
+                var updated = await _repo.UpdateAsync(existing);
+                if (!updated) return NotFound(new { message = "User not found." });
+                _logger.LogInformation("User updated: {Email}", existing.Email);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error updating user {Id}", id);
+                return StatusCode(500, new { message = "Internal server error." });
+            }
         }
 
         // DELETE /api/users/{id}
@@ -113,12 +131,21 @@ namespace UserManagementAPI.Controllers
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
         [Produces("application/json")]
+
         public async Task<IActionResult> Delete(int id)
         {
-            var deleted = await _repo.DeleteAsync(id);
-            if (!deleted) return NotFound();
-            _logger.LogInformation("User deleted: {Id}", id);
-            return NoContent();
+            try
+            {
+                var deleted = await _repo.DeleteAsync(id);
+                if (!deleted) return NotFound(new { message = "User not found." });
+                _logger.LogInformation("User deleted: {Id}", id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error deleting user {Id}", id);
+                return StatusCode(500, new { message = "Internal server error." });
+            }
         }
 
         private static UserDto MapToDto(User user)

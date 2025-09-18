@@ -43,9 +43,10 @@ namespace UserManagementAPI.Repositories
             }
         }
 
+
         public Task<IEnumerable<User>> GetAllAsync()
         {
-            return Task.FromResult(_users.Values.AsEnumerable());
+            return Task.FromResult(_users.Values?.AsEnumerable() ?? Enumerable.Empty<User>());
         }
 
         public Task<User?> GetByIdAsync(int id)
