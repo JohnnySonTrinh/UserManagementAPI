@@ -34,3 +34,11 @@
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.pdb
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.genruntimeconfig.cache
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/ref/UserManagementAPI.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
