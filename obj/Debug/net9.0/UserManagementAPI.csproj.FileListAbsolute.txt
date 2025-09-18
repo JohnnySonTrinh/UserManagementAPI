@@ -1,11 +1,3 @@
-/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.csproj.AssemblyReference.cache
-/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/rpswa.dswa.cache.json
-/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.GeneratedMSBuildEditorConfig.editorconfig
-/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.AssemblyInfoInputs.cache
-/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.AssemblyInfo.cs
-/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.csproj.CoreCompileInputs.cache
-/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.MvcApplicationPartsAssemblyInfo.cs
-/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.MvcApplicationPartsAssemblyInfo.cache
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/appsettings.Development.json
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/appsettings.json
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/UserManagementAPI.staticwebassets.endpoints.json
@@ -19,6 +11,15 @@
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.csproj.AssemblyReference.cache
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.AssemblyInfoInputs.cache
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.AssemblyInfo.cs
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.csproj.CoreCompileInputs.cache
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.MvcApplicationPartsAssemblyInfo.cs
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.MvcApplicationPartsAssemblyInfo.cache
+/Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/UserManagementAPI.sourcelink.json
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/rjimswa.dswa.cache.json
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/johnnytrinh/Documents/GitHub/UserManagementAPI/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
